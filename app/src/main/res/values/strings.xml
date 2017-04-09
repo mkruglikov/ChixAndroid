@@ -1,0 +1,15 @@
+<resources>
+    <string name="app_name">Чих Пых</string>
+
+    <string name="title_activity_main">Активные заказы</string>
+    <string name="title_activity_new_order">Новый заказ</string>
+    <string name="title_activity_edit_profile">Редактировать профиль</string>
+
+    <string name="bebas_regular_font">fonts/BebasNeueRegular.ttf</string>
+
+    <string name="tobacco">Табак</string>
+    <string name="extra">Дополнительно</string>
+
+    <string name="network_error_swipe">Нет соединения с сетью\nПроведите вниз, чтобы обновить</string>
+    <string name="no_active_orders">Нет активных заказов</string>
+</resources>

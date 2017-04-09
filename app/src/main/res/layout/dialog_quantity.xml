@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/llDialogQuantity"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp">
+
+    <pl.polak.clicknumberpicker.ClickNumberPickerView
+        android:id="@+id/quantityPicker"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="center"
+        android:gravity="center_vertical"
+        app:decimal_number="0"
+        app:left_picker_layout="@layout/minus_dark"
+        app:max_value="5"
+        app:min_value="0"
+        app:picker_corner_radius="0"
+        app:pickers_background_color="@android:color/transparent"
+        app:right_picker_layout="@layout/plus_dark"
+        app:swipe_enabled="false"
+        app:value="0"
+        app:value_background_color="@android:color/transparent"
+        app:value_text_color="@android:color/black" />
+
+</LinearLayout>

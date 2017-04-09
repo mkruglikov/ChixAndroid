@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/llNotEditable"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@android:color/white"
+        android:elevation="4dp"
+        android:padding="16dp">
+
+        <TextView
+            android:id="@+id/tvDate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginBottom="4dp"
+            android:text="15 декабря"
+            android:textSize="18sp" />
+
+        <TextView
+            android:id="@+id/tvInTime"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_below="@+id/tvDate"
+            android:text="15:50"
+            android:textColor="@color/colorGreyDark" />
+
+        <TextView
+            android:id="@+id/tvTimeDivider"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tvDate"
+            android:layout_marginEnd="4dp"
+            android:layout_marginStart="4dp"
+            android:layout_toEndOf="@+id/tvInTime"
+            android:text="-"
+            android:textColor="@color/colorGreyDark" />
+
+        <TextView
+            android:id="@+id/tvOutTime"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tvDate"
+            android:layout_toEndOf="@+id/tvTimeDivider"
+            android:text="18:50"
+            android:textColor="@color/colorGreyDark" />
+
+        <TextView
+            android:id="@+id/tvTotalTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignStart="@+id/tvTotal"
+            android:layout_alignTop="@+id/tvDate"
+            android:text="ИТОГ"
+            android:textColor="@color/colorGreyDark" />
+
+        <TextView
+            android:id="@+id/tvTotal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_below="@+id/tvTotalTitle"
+            android:text="1500 ₽"
+            android:textSize="24sp" />
+
+        <TextView
+            android:id="@+id/tvStatusTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_below="@+id/tvInTime"
+            android:layout_marginRight="8dp"
+            android:layout_marginTop="32dp"
+            android:text="Статус:"
+            android:textColor="@color/colorGreyDark" />
+
+        <TextView
+            android:id="@+id/tvStatus"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tvInTime"
+            android:layout_marginTop="32dp"
+            android:layout_toEndOf="@+id/tvStatusTitle"
+            android:text="Выполнен"
+            android:textColor="@color/colorGreen" />
+    </RelativeLayout>
+
+    <ProgressBar
+        android:id="@+id/pb"
+        style="?android:attr/progressBarStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_gravity="center"
+        android:visibility="gone" />
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/rvOneOrderItems"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+</LinearLayout>

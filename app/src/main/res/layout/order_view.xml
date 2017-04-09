@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/rlOrder"
+    android:layout_width="match_parent"
+    android:layout_height="80dp"
+    android:background="?attr/selectableItemBackground"
+    android:clickable="true"
+    android:padding="16dp">
+
+    <TextView
+        android:id="@+id/tvDate"
+        android:layout_width="56dp"
+        android:layout_height="56dp"
+        android:layout_alignParentTop="true"
+        android:text="02 февр."
+        android:textAlignment="center"
+        android:textSize="18sp" />
+
+    <View
+        android:id="@+id/divider"
+        android:layout_width="1dp"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="16dp"
+        android:layout_marginStart="16dp"
+        android:layout_toEndOf="@+id/tvDate"
+        android:background="@color/colorGreyMiddle" />
+
+    <TextView
+        android:id="@+id/tvTotal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="8dp"
+        android:layout_toEndOf="@+id/divider"
+        android:text="1200 ₽"
+        android:textSize="18sp" />
+
+    <TextView
+        android:id="@+id/tvTobaccoCount"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/tvTotal"
+        android:gravity="center"
+        android:layout_alignBottom="@+id/tvTotal"
+        android:layout_toEndOf="@+id/tvTotal"
+        android:text="2 кальяна"
+        android:textColor="@color/colorGreyDark" />
+
+    <TextView
+        android:id="@+id/tvIsDone"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_toEndOf="@+id/divider"
+        android:text="Выполнен"
+        android:textColor="@color/colorGreen"
+        android:textSize="13sp" />
+</RelativeLayout>

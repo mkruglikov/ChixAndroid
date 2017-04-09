@@ -1,0 +1,41 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+
+    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+        <item name="android:textColor">@android:color/black</item>
+        <item name="android:itemTextAppearance">@style/TextAppearance</item>
+
+        <!--Прозрачный статусбар-->
+        <item name="android:windowTranslucentStatus">true</item>
+
+        <!--Отключение анимации перехода между активити-->
+        <item name="android:windowAnimationStyle">@null</item>
+    </style>
+
+    <style name="TextAppearance">
+        <item name="android:textColor">@android:color/black</item>
+        <item name="android:textSize">16sp</item>
+    </style>
+
+    <style name="LoginTheme" parent="AppTheme">
+        <item name="android:windowLightStatusBar" tools:targetApi="23">true</item>
+        <item name="android:textColor">@android:color/black</item>
+        <item name="android:textColorPrimary">@android:color/black</item>
+        <item name="android:textColorSecondary">@android:color/black</item>
+        <item name="android:textColorHint">#616161</item>
+        <item name="colorControlNormal">#616161</item>
+        <item name="colorControlActivated">@color/colorAccent</item>
+        <item name="colorControlHighlight">@android:color/black</item>
+        <item name="android:background">#f5f5f5</item>
+    </style>
+
+    <style name="ProfileToolbar" parent="AppTheme">
+        <item name="android:textColor">@android:color/white</item>
+        <item name="android:textColorPrimary">@android:color/white</item>
+        <item name="android:textColorSecondary">@android:color/white</item>
+        <item name="android:textSize">24sp</item>
+    </style>
+
+</resources>
